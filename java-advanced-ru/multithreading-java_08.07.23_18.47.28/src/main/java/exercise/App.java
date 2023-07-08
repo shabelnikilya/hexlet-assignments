@@ -8,8 +8,8 @@ class App {
     private static final Logger LOGGER = Logger.getLogger("AppLogger");
 
     public static Map<String, Integer> getMinMax(int[] numbers) {
-        MinThread min = new MinThread(numbers);
-        MaxThread max = new MaxThread(numbers);
+        MinThread min = new MinThread(numbers, LOGGER);
+        MaxThread max = new MaxThread(numbers, LOGGER);
 
         min.start();
         max.start();
