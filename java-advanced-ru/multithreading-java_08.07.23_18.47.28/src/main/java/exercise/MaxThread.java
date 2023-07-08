@@ -3,6 +3,7 @@ package exercise;
 import java.util.Arrays;
 import java.util.logging.Logger;
 
+// BEGIN
 public class MaxThread extends Thread {
 
     private final int[] numbers;
@@ -25,3 +26,4 @@ public class MaxThread extends Thread {
         logger.info("Thread finish (find max)");
     }
 }
+// END

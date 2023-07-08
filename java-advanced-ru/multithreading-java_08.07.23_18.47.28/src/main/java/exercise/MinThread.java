@@ -3,6 +3,7 @@ package exercise;
 import java.util.Arrays;
 import java.util.logging.Logger;
 
+// BEGIN
 public class MinThread extends Thread {
     private final int[] numbers;
     private final Logger logger;
@@ -24,3 +25,4 @@ public class MinThread extends Thread {
         return min;
     }
 }
+// END
