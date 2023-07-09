@@ -4,7 +4,6 @@ import java.util.Random;
 
 // BEGIN
 public class ListThread extends Thread {
-    private final static int LIMIT = 1000;
 
     private final SafetyList safetyList;
     private final Random random = new Random();
@@ -16,7 +15,7 @@ public class ListThread extends Thread {
     @Override
     public void run() {
         int amount = 0;
-        while (amount < LIMIT) {
+        while (amount < 1000) {
             try {
                 Thread.sleep(1);
             } catch (InterruptedException e) {
